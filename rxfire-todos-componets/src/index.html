@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+  <script src="/build/mycomponent.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCPJ_h5Xgt2LQ1IyBmspQBQ-LLeWa22QOE",
+      authDomain: "rxfire-todos-a53b8.firebaseapp.com",
+      databaseURL: "https://rxfire-todos-a53b8.firebaseio.com",
+      projectId: "rxfire-todos-a53b8",
+      storageBucket: "",
+      messagingSenderId: "446406809950"
+    };
+    const firebase = firebase.initializeApp(config);
+    const settings = {
+      timestampInSnapshots: true
+    };
+    firebase.settings(settings);
+  </script>
+
+</head>
+
+<body>
+
+  <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+
+</body>
+
+</html>
